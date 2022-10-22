@@ -7,6 +7,9 @@ OpenCVが提供するニューラルネットワークを使った顔認証プ�
 ---
 **画像から顔を探す**
 　opencvの[学習済みモデル（ YuNet ）](https://github.com/opencv/opencv_zoo/blob/master/models/face_detection_yunet/face_detection_yunet_2022mar.onnx)を使って、入力画像に写っている全ての顔を検知します。
+![](img.jpg)
+　　　　　　img.jpg
+
 
 ```
 python3 detect.py img.jpg
@@ -20,7 +23,7 @@ OK Normal end (find 1 face)
 ```
 python3 feature.py 01.jpg
 ```
-```python
+```
 # 出力結果
 [[-1.638414   -0.02444979  0.9627669   0.61841345 -0.713856    3.903615
   -0.89956     0.5823029  -1.4559474  -0.8737672  -2.7391284   1.0349765
@@ -83,13 +86,8 @@ python3 recognize.jpg id.jpg
 True ('01', 0.6752756895766652)
 OK Normal end
 ```
-
-
-<center>
-
 ![](out.jpg)
-結果(out.jpg)
-</center>
+　　　　　　out.jpg
 
 # 参考文献
 ---
