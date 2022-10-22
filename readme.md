@@ -6,6 +6,7 @@ OpenCVが提供するニューラルネットワークを使った顔認証プ�
 # 概要
 ---
 **画像から顔を探す**
+
 　opencvの[学習済みモデル（ YuNet ）](https://github.com/opencv/opencv_zoo/blob/master/models/face_detection_yunet/face_detection_yunet_2022mar.onnx)を使って、入力画像に写っている全ての顔を検知します。
 ![](img.jpg)
 
@@ -20,6 +21,7 @@ python3 detect.py img.jpg
 OK Normal end (find 1 face)
 ```
 **特徴量を抽出**
+
 　opencvの[学習済みモデル（ SFace ）](https://github.com/opencv/opencv_zoo/blob/master/models/face_recognition_sface/face_recognition_sface_2021dec.onnx)を用いた主成分分析 Principal component analysis: PCA で検知した顔の特徴量をバイナリデータ（ .npy ）で記録します。PCAは、機械学習の領域において、教師なし学習の手法に分類されます。抽出した特徴量データは、顔認証時の比較に用いられます。
 ```
 python3 feature.py 01.jpg
@@ -53,6 +55,7 @@ OK normal end
 ```
 
 **特徴量を比較・認証**
+
 　入力画像に対して、先述した検知及び抽出を行い、入力画像内の顔と事前に持っているIDの特徴量データとコサイン類似度で比較し、認証します。認証の閾値はOpenCV Tutorialsのデフォルト値0.363を採用しています。
 ```
 python3 recognize.jpg id.jpg
