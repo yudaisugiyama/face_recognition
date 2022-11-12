@@ -94,8 +94,4 @@ OK Normal end
 ![](out.jpg)
 
 　　　　　　out.jpg
-
-# 参考文献
----
-- https://qiita.com/UnaNancyOwen/items/8c65a976b0da2a558f06
  
